@@ -10,9 +10,11 @@ public class Player : MonoBehaviour
 
     public float speed = 3.5f;
 
-    public float jumpspeed = 5f;
+    public float jumpspeed = 3f;
 
     public bool isGrounded;
+
+    public bool isWall;
 
     private float direction = 0f;
 
@@ -20,8 +22,14 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D player;
 
- 
-     
+    private float wallJumpCooldown;
+
+
+
+    [SerializeField] private LayerMask groundLayer;
+
+    [SerializeField] private LayerMask wallLayer;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +39,8 @@ public class Player : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
 
         isGrounded = true;
+
+        isGrounded = false;
     }
 
 
@@ -58,8 +68,15 @@ public class Player : MonoBehaviour
 
 
         RaycastHit2D hitInfo;
-        
-        hitInfo = Physics2D.Raycast(transform.position - new Vector3(0, sprite.bounds.extents.y + 0.01f, 0), Vector2.down, 0.01f);
+
+        RaycastHit2D wallCheck;
+
+        Vector2 boxSize = new Vector2(0.25f, 0.01f);
+
+        hitInfo = Physics2D.BoxCast(transform.position - new Vector3(0, sprite.bounds.extents.y + boxSize.y + 0.01f, 0), boxSize, 0, Vector2.down, boxSize.y, groundLayer);
+
+        wallCheck = Physics2D.BoxCast(transform.position - new Vector3(0, sprite.bounds.extents.y + boxSize.y + 0.01f, 0), boxSize, 0, Vector2.down, boxSize.y, wallLayer);
+
 
         if (hitInfo)
         {
@@ -67,16 +84,37 @@ public class Player : MonoBehaviour
             isGrounded = true;
         }
 
-        else 
+        else
         {
-       
+
             isGrounded = false;
         }
+
+        if (wallCheck)
+        {
+
+            isWall = true;
+        }
+
+        else
+        {
+
+            isWall = false;
+        }
+
 
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            player.velocity = new Vector2(player.velocity.x, jumpspeed);
+            player.velocity = new Vector3(player.velocity.x, jumpspeed);
+        }
+
+
+
+        if (Input.GetButtonDown("Jump") && isWall)
+        {
+  
+            player.velocity = new Vector2(player.velocity.y , jumpspeed);
         }
 
 
