@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
 
     public bool isGrounded;
 
+    public int jumpCount = 0;
+
     public bool isWall;
 
     private float direction = 0f;
@@ -44,6 +46,21 @@ public class Player : MonoBehaviour
     }
 
 
+    public void Jump() {
+	jumpCount++;
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+	  isGrounded = true;
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        isGrounded = false;
+    }
+ 
 
     // Update is called once per frame
     void Update()
@@ -71,24 +88,25 @@ public class Player : MonoBehaviour
 
         RaycastHit2D wallCheck;
 
-        Vector2 boxSize = new Vector2(0.25f, 0.01f);
+        Vector2 boxSize = new Vector2(0.9f, 0.04f);
 
         hitInfo = Physics2D.BoxCast(transform.position - new Vector3(0, sprite.bounds.extents.y + boxSize.y + 0.01f, 0), boxSize, 0, Vector2.down, boxSize.y, groundLayer);
 
         wallCheck = Physics2D.BoxCast(transform.position - new Vector3(0, sprite.bounds.extents.y + boxSize.y + 0.01f, 0), boxSize, 0, Vector2.down, boxSize.y, wallLayer);
 
-
+/*
         if (hitInfo)
         {
 
             isGrounded = true;
+		jumpCount = 0;
         }
 
         else
         {
 
             isGrounded = false;
-        }
+        }*/
 
         if (wallCheck)
         {
@@ -111,9 +129,9 @@ public class Player : MonoBehaviour
 
 
 
-        if (Input.GetButtonDown("Jump") && isWall)
+        if (Input.GetButtonDown("Jump") && isWall && jumpCount < 2)
         {
-  
+ 		
             player.velocity = new Vector2(player.velocity.y , jumpspeed);
         }
 
