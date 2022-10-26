@@ -11,7 +11,8 @@ public class HealthCapsule : MonoBehaviour
         {
             collision.GetComponent<Health>().AddHealth(healthValue);
             
-            gameObject.SetActive(false);
+            //gameObject.SetActive(false);
+            Destroy(gameObject);
 
         }
     }

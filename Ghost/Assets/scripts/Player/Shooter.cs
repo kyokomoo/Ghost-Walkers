@@ -33,6 +33,8 @@ public class Shooter : MonoBehaviour
     private void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, firePoint.transform.position, firePoint.transform.rotation);
+        bullet.layer = 2;
+	  gameObject.layer = 2;
         Destroy(bullet, 5f);
     }
 
