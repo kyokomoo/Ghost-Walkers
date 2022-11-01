@@ -8,7 +8,7 @@ public class PlayerMovementTest : MonoBehaviour
     //allows us to change speed variable in inspector even it is private to read/write
     [SerializeField]
 
-    public float distanceToCheck = 0.1f;
+    public float distanceToCheck = 0.3f;
 
     public float speed = 3.5f;
 
