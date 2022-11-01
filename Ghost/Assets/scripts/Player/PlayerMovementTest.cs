@@ -8,9 +8,11 @@ public class PlayerMovementTest : MonoBehaviour
     //allows us to change speed variable in inspector even it is private to read/write
     [SerializeField]
 
+    public float distanceToCheck = 0.1f;
+
     public float speed = 3.5f;
 
-    public float jumpspeed = 5f;
+    public float jumpspeed = 7f;
 
     public bool isGrounded;
 
@@ -20,7 +22,6 @@ public class PlayerMovementTest : MonoBehaviour
 
     private Rigidbody2D player;
 
-    private BoxCollider2D box;
 
 
     // Start is called before the first frame update
@@ -29,10 +30,6 @@ public class PlayerMovementTest : MonoBehaviour
         player = GetComponent<Rigidbody2D>();
 
         sprite = GetComponent<SpriteRenderer>();
-
-        box = GetComponent<BoxCollider2D>();
-        isGrounded = true;
-        isGrounded = false;
 
 
     }
@@ -43,31 +40,8 @@ public class PlayerMovementTest : MonoBehaviour
     void Update()
     {
 
-        RaycastHit2D hitInfo;
-
-
-        hitInfo = Physics2D.Raycast(transform.position - new Vector3(0, sprite.bounds.extents.y, 0), Vector2.down, -0.327f);
-
-
-
-        if (hitInfo)
-        {
-
-            isGrounded = true;
-
-
-        }
-
-        else
-        {
-
-            isGrounded = false;
-
-
-        }
-
-
         direction = Input.GetAxis("Horizontal");
+
 
         if (direction > 0f && Input.GetKey(KeyCode.D))
         {
@@ -82,6 +56,18 @@ public class PlayerMovementTest : MonoBehaviour
         else
         {
             player.velocity = new Vector2(0, player.velocity.y);
+        }
+
+
+
+        if (Physics2D.Raycast(transform.position, Vector2.down, distanceToCheck))
+        {
+            isGrounded = true;
+        }
+        
+        else
+        {
+            isGrounded = false;
         }
 
 
