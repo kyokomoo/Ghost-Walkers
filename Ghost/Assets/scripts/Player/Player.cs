@@ -46,12 +46,23 @@ public class Player : MonoBehaviour
     }
 
 
+
     public void Jump() 
     {
 	
         jumpCount++;
 
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            collision.GetComponent<Player>().Jump();
+        }
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -63,6 +74,10 @@ public class Player : MonoBehaviour
         isGrounded = false;
     }
  
+
+
+
+
 
     // Update is called once per frame
     void Update()
