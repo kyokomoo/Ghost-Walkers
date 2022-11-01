@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerMovementTest : MonoBehaviour
 {
 
     //allows us to change speed variable in inspector even it is private to read/write
@@ -10,12 +10,9 @@ public class Player : MonoBehaviour
 
     public float speed = 3.5f;
 
-    public float jumpspeed = 3f;
+    public float jumpspeed = 5f;
 
     public bool isGrounded;
-
-    public int jumpCount = 0;
-
 
     private float direction = 0f;
 
@@ -23,6 +20,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D player;
 
+    private BoxCollider2D box;
 
 
     // Start is called before the first frame update
@@ -32,45 +30,42 @@ public class Player : MonoBehaviour
 
         sprite = GetComponent<SpriteRenderer>();
 
+        box = GetComponent<BoxCollider2D>();
         isGrounded = true;
-
         isGrounded = false;
-    }
 
-
-
-    public void Jump() 
-    {
-	
-        jumpCount++;
 
     }
 
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            collision.GetComponent<Player>().Jump();
-        }
-    }
-
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-	  isGrounded = true;
-    }
-
-    private void OnCollisionExit2D(Collision2D other)
-    {
-        isGrounded = false;
-    }
- 
 
 
     // Update is called once per frame
     void Update()
     {
+
+        RaycastHit2D hitInfo;
+
+
+        hitInfo = Physics2D.Raycast(transform.position - new Vector3(0, sprite.bounds.extents.y, 0), Vector2.down, -0.327f);
+
+
+
+        if (hitInfo)
+        {
+
+            isGrounded = true;
+
+
+        }
+
+        else
+        {
+
+            isGrounded = false;
+
+
+        }
+
 
         direction = Input.GetAxis("Horizontal");
 
@@ -89,15 +84,18 @@ public class Player : MonoBehaviour
             player.velocity = new Vector2(0, player.velocity.y);
         }
 
-       
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            player.velocity = new Vector3(player.velocity.x, jumpspeed);
+            player.velocity = new Vector2(player.velocity.x, jumpspeed);
         }
 
+      
+
+        
+        
 
 
- 
 
     }
 

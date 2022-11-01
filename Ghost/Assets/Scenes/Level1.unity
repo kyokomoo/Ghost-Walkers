@@ -446,13 +446,6 @@ MonoBehaviour:
   jumpspeed: 6
   isGrounded: 0
   jumpCount: 0
-  isWall: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!212 &365242289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -513,7 +506,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365242287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.84, y: -1.74, z: 0}
+  m_LocalPosition: {x: -4.636, y: -2.025, z: 0}
   m_LocalScale: {x: 0.4917233, y: 0.48712328, z: 0.324864}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -555,7 +548,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02472794, y: 2.271411}
+  m_Offset: {x: -0.118359864, y: 2.3317065}
   m_SpriteTilingProperty:
     border: {x: 1.1999999, y: 0, z: 1.35, w: 0.14999999}
     pivot: {x: 0.5, y: 0}
@@ -566,7 +559,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9504063, y: 4.8229494}
+  m_Size: {x: 2.3137121, y: 4.7023582}
   m_EdgeRadius: 0
 --- !u!114 &365242293
 MonoBehaviour:
@@ -1431,7 +1424,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683712712}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ca01ec61ab5f9c4b800da3b36f55419, type: 3}
   m_Name: 
@@ -1440,13 +1433,6 @@ MonoBehaviour:
   jumpspeed: 6
   isGrounded: 0
   jumpCount: 0
-  isWall: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!95 &683712718
 Animator:
   serializedVersion: 4
