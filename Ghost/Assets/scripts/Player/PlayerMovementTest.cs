@@ -22,6 +22,8 @@ public class PlayerMovementTest : MonoBehaviour
 
     private Rigidbody2D player;
 
+    public LayerMask groundlayer;
+
 
 
     // Start is called before the first frame update
@@ -30,7 +32,6 @@ public class PlayerMovementTest : MonoBehaviour
         player = GetComponent<Rigidbody2D>();
 
         sprite = GetComponent<SpriteRenderer>();
-
 
     }
 
@@ -59,16 +60,18 @@ public class PlayerMovementTest : MonoBehaviour
         }
 
 
-
-        if (Physics2D.Raycast(transform.position, Vector2.down, distanceToCheck))
+        if (Physics2D.Raycast(transform.position, Vector2.down, distanceToCheck, groundlayer))
         {
             isGrounded = true;
+
         }
-        
+
         else
         {
             isGrounded = false;
         }
+
+
 
 
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -76,10 +79,10 @@ public class PlayerMovementTest : MonoBehaviour
             player.velocity = new Vector2(player.velocity.x, jumpspeed);
         }
 
-      
 
-        
-        
+
+
+
 
 
 
