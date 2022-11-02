@@ -438,7 +438,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365242287}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9ca01ec61ab5f9c4b800da3b36f55419, type: 3}
   m_Name: 
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365242287}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7c82cd0a7fae4a241a588ea81a48e0cd, type: 3}
   m_Name: 
@@ -605,6 +605,9 @@ MonoBehaviour:
   speed: 3.5
   jumpspeed: 7
   isGrounded: 0
+  groundlayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &390282710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,7 +1266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 673575914}
   - component: {fileID: 673575913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GrassDown_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1400,7 +1403,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.013038091, y: -0.20650552}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1411,7 +1414,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6666667, y: 0.6666667}
+  m_Size: {x: 0.23380087, y: 0.2536557}
   m_EdgeRadius: 0
 --- !u!50 &683712716
 Rigidbody2D:
@@ -2799,7 +2802,7 @@ GameObject:
   - component: {fileID: 1601556533}
   - component: {fileID: 1601556532}
   - component: {fileID: 1601556531}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: Platform_01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3189,7 +3192,7 @@ GameObject:
   - component: {fileID: 1834827307}
   - component: {fileID: 1834827306}
   - component: {fileID: 1834827305}
-  m_Layer: 1
+  m_Layer: 6
   m_Name: Platform_01 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
