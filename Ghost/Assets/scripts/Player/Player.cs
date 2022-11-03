@@ -25,6 +25,11 @@ public class Player : MonoBehaviour
 
 
 
+    //For animator
+    UnityEngine.AI.NavMeshAgent _agent;
+    Animator _animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +40,10 @@ public class Player : MonoBehaviour
         isGrounded = true;
 
         isGrounded = false;
+
+	  //For the animator controller
+	  _animator = GetComponentInChildren<Animator>();
+	  _agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
 
 
@@ -88,8 +97,9 @@ public class Player : MonoBehaviour
         }
 
 
-
- 
+	  //For animator controller
+	  float speedPercent = _agent.velocity.magnitude / _agent.speed;
+ 		_animator.SetFloat("speed", speedPercent);
 
     }
 
