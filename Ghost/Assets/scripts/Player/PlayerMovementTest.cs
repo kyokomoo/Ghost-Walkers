@@ -26,12 +26,22 @@ public class PlayerMovementTest : MonoBehaviour
 
 
 
+    //For animator
+    UnityEngine.AI.NavMeshAgent _agent;
+    Animator _animator;
+
+
     // Start is called before the first frame update
     void Start()
     {
         player = GetComponent<Rigidbody2D>();
 
         sprite = GetComponent<SpriteRenderer>();
+
+
+         //For the animator controller
+	  _animator = GetComponentInChildren<Animator>();
+	  _agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
 
     }
 
@@ -81,9 +91,9 @@ public class PlayerMovementTest : MonoBehaviour
 
 
 
-
-
-
+	  //For animator controller
+	  float speedPercent = _agent.velocity.magnitude / _agent.speed;
+ 		_animator.SetFloat("speed", speedPercent);
 
 
     }
