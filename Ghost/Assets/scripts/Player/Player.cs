@@ -78,11 +78,13 @@ public class Player : MonoBehaviour
         if (direction > 0f && Input.GetKey(KeyCode.D))
         {
             player.velocity = new Vector2(direction * speed, player.velocity.y);
+            _animator.SetTrigger("move");
         }
 
         else if (direction < 0f && Input.GetKey(KeyCode.A))
         {
             player.velocity = new Vector2(direction * speed, player.velocity.y);
+            _animator.SetTrigger("move");
         }
 
         else
@@ -103,4 +105,5 @@ public class Player : MonoBehaviour
 
     }
 
+    
 }
