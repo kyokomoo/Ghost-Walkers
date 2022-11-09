@@ -1915,9 +1915,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 2
-  _attackDamage: 0
-  _lifePoints: 0
-  _attackRadius: 0
+  _attackDamage: 1
+  _lifePoints: 1
+  _attackRadius: 2
   _wallLeft: 5
   _wallRight: 10
   _followRadius: 5
