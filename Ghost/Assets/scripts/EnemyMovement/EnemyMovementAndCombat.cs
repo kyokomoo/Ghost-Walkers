@@ -13,6 +13,7 @@ public class EnemyMovementAndCombat : Enemies
     public float _wallLeft;
     public float _wallRight;
     bool attack = false;
+    float timer;
 
     float walkingDirection = 1.0f;
 
@@ -52,10 +53,15 @@ public class EnemyMovementAndCombat : Enemies
 	  //walkAmount.x = walkingDirection * getMoveSpeed() * Time.deltaTime;
 	  if (!attack)
         {
-        	if (this.transform.position.x >= getWallRight())
+        	if (this.transform.position.x >= getWallRight()) {
       		  walkingDirection = -1.0f;
-        	else if (this.transform.position.x <= getWallLeft())
+			  enemySR.flipX = true;
+		}
+        	else if (this.transform.position.x <= getWallLeft()) {
       	        walkingDirection = 1.0f;
+			  enemySR.flipX = false;
+		}
+
 
        	this.transform.position += new Vector3(walkingDirection * getMoveSpeed() * Time.deltaTime, 0f, 0f);
    	   }
@@ -72,9 +78,12 @@ public class EnemyMovementAndCombat : Enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", true);
-        		  FindObjectOfType<Player>().GetComponent<Health>().AddHealth(-getAttackDamage());
-            
+                    //enemyAnim.SetBool("AttackA", true);
+			  timer += Time.deltaTime;
+			  if (timer > 2) {
+        		  	FindObjectOfType<Player>().GetComponent<Health>().TakeDamage(getAttackDamage());
+				timer = 0;
+			  }
                 }
                 else
                 {
@@ -93,7 +102,12 @@ public class EnemyMovementAndCombat : Enemies
                 if (checkAttackRadius(playerTransform.position.x, transform.position.x))
                 {
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", true);
+                    //enemyAnim.SetBool("AttackA", true);
+			  timer += Time.deltaTime;
+			  if (timer > 2) {
+        		  	FindObjectOfType<Player>().GetComponent<Health>().TakeDamage(getAttackDamage());
+				timer = 0;
+			  }
                 }
                 else
                 {
@@ -116,4 +130,5 @@ public class EnemyMovementAndCombat : Enemies
 
 
     }
+
 }
