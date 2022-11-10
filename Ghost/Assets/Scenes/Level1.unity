@@ -11886,25 +11886,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1078211456}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.631, y: 7.64, z: -3.252156}
-  m_LocalScale: {x: 0.2531073, y: 1.2228727, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1274002625}
-  - {fileID: 2116445277}
-  - {fileID: 470330118}
-  - {fileID: 206634524}
-  - {fileID: 677618660}
-  - {fileID: 349098057}
-  - {fileID: 1982647449}
-  - {fileID: 1948911532}
-  m_Father: {fileID: 1620722364}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1088698861
-GameObject:
+  m_GameObject: {fileID: 1101305061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81de3e61de5e3a24989b6b7426acd290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 2
+  _attackDamage: 1
+  _lifePoints: 1
+  _attackRadius: 2
+  _wallLeft: 5
+  _wallRight: 10
+  _followRadius: 5
+  playerTransform: {fileID: 0}
+  enemyAnim: {fileID: 0}
+--- !u!61 &1101305063
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
