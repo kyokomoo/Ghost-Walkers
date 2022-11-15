@@ -89,6 +89,7 @@ public class PlayerMovementTest : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             player.velocity = new Vector2(player.velocity.x, jumpspeed);
+            
         }
 
 
