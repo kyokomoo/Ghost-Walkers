@@ -4208,7 +4208,6 @@ GameObject:
   m_Component:
   - component: {fileID: 365242290}
   - component: {fileID: 365242289}
-  - component: {fileID: 365242288}
   - component: {fileID: 365242291}
   - component: {fileID: 365242292}
   - component: {fileID: 365242293}
@@ -4224,22 +4223,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &365242288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365242287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca01ec61ab5f9c4b800da3b36f55419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpspeed: 6
-  isGrounded: 1
-  jumpCount: 0
 --- !u!212 &365242289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7202,7 +7185,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.490568, y: 1.1198283, z: -30}
+  m_LocalPosition: {x: -4.27862, y: 1.1188127, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
