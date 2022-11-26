@@ -1013,7 +1013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97002198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.32, y: 1.9299996, z: -30}
+  m_LocalPosition: {x: 1.25, y: 1.2399995, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3884,7 +3884,6 @@ GameObject:
   m_Component:
   - component: {fileID: 365242290}
   - component: {fileID: 365242289}
-  - component: {fileID: 365242288}
   - component: {fileID: 365242291}
   - component: {fileID: 365242292}
   - component: {fileID: 365242293}
@@ -3900,22 +3899,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &365242288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 365242287}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ca01ec61ab5f9c4b800da3b36f55419, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpspeed: 6
-  isGrounded: 1
-  jumpCount: 0
 --- !u!212 &365242289
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3976,7 +3959,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365242287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.32, y: 0.51, z: 0}
+  m_LocalPosition: {x: 1.25, y: -0.18, z: 0}
   m_LocalScale: {x: 4.7282577, y: 4.4811864, z: 0.324864}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4018,7 +4001,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0048257858, y: -0.21683925}
+  m_Offset: {x: 0.0048257858, y: -0.2229681}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4029,7 +4012,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.25199056, y: 0.2536204}
+  m_Size: {x: 0.25199056, y: 0.24136269}
   m_EdgeRadius: 0
 --- !u!114 &365242293
 MonoBehaviour:
@@ -4073,7 +4056,7 @@ MonoBehaviour:
   distanceToCheck: 2
   speed: 6
   jumpspeed: 8
-  isGrounded: 0
+  isGrounded: 1
   groundlayer:
     serializedVersion: 2
     m_Bits: 64
@@ -6665,7 +6648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.32, y: 1.9299996, z: -30}
+  m_LocalPosition: {x: 1.25, y: 1.2399995, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22170,7 +22153,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.008801617}
+  m_Offset: {x: 0, y: 0.04138508}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -22181,7 +22164,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.14239676}
+  m_Size: {x: 0.16, y: 0.062098198}
   m_EdgeRadius: 0
 --- !u!212 &1522355636
 SpriteRenderer:
