@@ -28,7 +28,7 @@ public class PlayerMovementTest : MonoBehaviour
 
     //For animator
     UnityEngine.AI.NavMeshAgent _agent;
-    Animator _animator;
+     Animator _animator;
 
 
     // Start is called before the first frame update
@@ -57,13 +57,13 @@ public class PlayerMovementTest : MonoBehaviour
         if (direction > 0f && Input.GetKey(KeyCode.D))
         {
             player.velocity = new Vector2(direction * speed, player.velocity.y);
-            _animator.SetTrigger("move");
+            //_animator.SetTrigger("walk");
         }
 
         else if (direction < 0f && Input.GetKey(KeyCode.A))
         {
             player.velocity = new Vector2(direction * speed, player.velocity.y);
-            _animator.SetTrigger("move");
+            //_animator.SetTrigger("walk");
         }
 
         else
@@ -83,7 +83,8 @@ public class PlayerMovementTest : MonoBehaviour
             isGrounded = false;
         }
 
-
+        //animation transition code
+        _animator.SetBool("walk", direction != 0);
 
 
         if (Input.GetButtonDown("Jump") && isGrounded)
