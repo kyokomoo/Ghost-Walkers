@@ -358,7 +358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &24914803
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2143,7 +2143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &136791206
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2615,7 +2615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &191183429
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2740,7 +2740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &195982352
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3309,7 +3309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &228766220
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3434,7 +3434,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &247067015
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3799,7 +3799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &303076023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3924,7 +3924,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &305143539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4465,6 +4465,8 @@ GameObject:
   m_Component:
   - component: {fileID: 333972300}
   - component: {fileID: 333972299}
+  - component: {fileID: 333972302}
+  - component: {fileID: 333972301}
   m_Layer: 0
   m_Name: Spike_02 (3)
   m_TagString: Untagged
@@ -4539,6 +4541,45 @@ Transform:
   m_Father: {fileID: 404845426}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &333972301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333972298}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 6
+--- !u!61 &333972302
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333972298}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.15624408, y: 1.7748971}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1126317, y: 5.70249}
+  m_EdgeRadius: 0
 --- !u!1 &357607900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,7 +5463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &386918046
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6695,7 +6736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &434841088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6820,7 +6861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &443255947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7272,7 +7313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &477342948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7632,7 +7673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &503468598
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7754,7 +7795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.259348, y: 1.1188127, z: -30}
+  m_LocalPosition: {x: 2.4258175, y: 1.1192209, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9241,7 +9282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &641043530
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9894,7 +9935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &707906736
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10019,7 +10060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &721178063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11253,6 +11294,8 @@ GameObject:
   m_Component:
   - component: {fileID: 812071512}
   - component: {fileID: 812071511}
+  - component: {fileID: 812071514}
+  - component: {fileID: 812071513}
   m_Layer: 0
   m_Name: Spike_05
   m_TagString: Untagged
@@ -11327,6 +11370,45 @@ Transform:
   m_Father: {fileID: 1115144801}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &812071513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812071510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 6
+--- !u!61 &812071514
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812071510}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.061540604, y: -0.31676006}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.2306314, y: 4.16648}
+  m_EdgeRadius: 0
 --- !u!1 &817317166
 GameObject:
   m_ObjectHideFlags: 0
@@ -11608,7 +11690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &824054353
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11892,7 +11974,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &863390815
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13264,7 +13346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &974399844
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14247,6 +14329,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1077031059}
   - component: {fileID: 1077031058}
+  - component: {fileID: 1077031061}
+  - component: {fileID: 1077031060}
   m_Layer: 0
   m_Name: Spike_02 (1)
   m_TagString: Untagged
@@ -14321,6 +14405,45 @@ Transform:
   m_Father: {fileID: 226497525}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1077031060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077031057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 6
+--- !u!61 &1077031061
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077031057}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.21874309, y: 1.113071}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1126304, y: 4.9804983}
+  m_EdgeRadius: 0
 --- !u!1 &1082310658
 GameObject:
   m_ObjectHideFlags: 0
@@ -14788,6 +14911,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1118562740}
   - component: {fileID: 1118562739}
+  - component: {fileID: 1118562742}
+  - component: {fileID: 1118562741}
   m_Layer: 0
   m_Name: Spike_05 (3)
   m_TagString: Untagged
@@ -14862,6 +14987,45 @@ Transform:
   m_Father: {fileID: 749716502}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1118562741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118562738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 6
+--- !u!61 &1118562742
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118562738}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.030770898, y: 0.69111204}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.8, y: 4.8}
+    newSize: {x: 4.8, y: 4.8}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.79984295, y: 6.1822243}
+  m_EdgeRadius: 0
 --- !u!1 &1145602513
 GameObject:
   m_ObjectHideFlags: 0
@@ -16814,7 +16978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1358487273
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17140,7 +17304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1384351276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17601,7 +17765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1411206469
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17962,7 +18126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1457085696
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18087,7 +18251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1460077688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20674,7 +20838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1799788033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20799,7 +20963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1806119872
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21811,7 +21975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &1938414203
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22607,7 +22771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &2015247216
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22853,7 +23017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &2031357876
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24017,7 +24181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95de5f764e0d8204d80cdc7d09b57121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 6
 --- !u!212 &2137122763
 SpriteRenderer:
   m_ObjectHideFlags: 0
