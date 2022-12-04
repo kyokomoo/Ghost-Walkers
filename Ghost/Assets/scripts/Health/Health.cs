@@ -52,6 +52,11 @@ public class Health : MonoBehaviour
                 //anim.SetTrigger("die");
 
                 dead = true;
+                
+                Destroy(gameObject);
+
+                LevelManager.instance.Respawn();
+             
                 //SoundManager.instance.PlaySound(deathSound);
             }
         }
