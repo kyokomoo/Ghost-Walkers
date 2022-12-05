@@ -46,6 +46,8 @@ public class Health : MonoBehaviour
         
         else
         {
+		if (gameObject.tag == "Enemy")
+			Destroy(gameObject);
             if (!dead)
             {
                 //Deactivate all attached component classes

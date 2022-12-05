@@ -555,6 +555,7 @@ GameObject:
   - component: {fileID: 35275382}
   - component: {fileID: 35275381}
   - component: {fileID: 35275380}
+  - component: {fileID: 35275386}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (2)
   m_TagString: Untagged
@@ -595,6 +596,7 @@ MonoBehaviour:
   _attackRadius: 1
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 7
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -729,6 +731,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &35275386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35275378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb51118cbef3d14f8e7364bf1754601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &36697767
 GameObject:
   m_ObjectHideFlags: 0
@@ -8685,6 +8706,7 @@ GameObject:
   - component: {fileID: 317544050}
   - component: {fileID: 317544049}
   - component: {fileID: 317544048}
+  - component: {fileID: 317544054}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (3)
   m_TagString: Untagged
@@ -8725,6 +8747,7 @@ MonoBehaviour:
   _attackRadius: 1
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 5
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -8859,6 +8882,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &317544054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 317544046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb51118cbef3d14f8e7364bf1754601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &318897131
 GameObject:
   m_ObjectHideFlags: 0
@@ -20066,6 +20108,7 @@ GameObject:
   - component: {fileID: 746885455}
   - component: {fileID: 746885454}
   - component: {fileID: 746885453}
+  - component: {fileID: 746885459}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (3)
   m_TagString: Untagged
@@ -20106,6 +20149,7 @@ MonoBehaviour:
   _attackRadius: 1
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 7
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -20240,6 +20284,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &746885459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 746885451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb51118cbef3d14f8e7364bf1754601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &751048956
 GameObject:
   m_ObjectHideFlags: 0
@@ -28117,6 +28180,7 @@ GameObject:
   - component: {fileID: 1044516451}
   - component: {fileID: 1044516450}
   - component: {fileID: 1044516449}
+  - component: {fileID: 1044516455}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (2)
   m_TagString: Untagged
@@ -28157,6 +28221,7 @@ MonoBehaviour:
   _attackRadius: 1
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 5
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -28291,6 +28356,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1044516455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044516447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb51118cbef3d14f8e7364bf1754601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &1059980526
 GameObject:
   m_ObjectHideFlags: 0
@@ -34722,6 +34806,7 @@ GameObject:
   - component: {fileID: 1297957242}
   - component: {fileID: 1297957241}
   - component: {fileID: 1297957240}
+  - component: {fileID: 1297957246}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (2)
   m_TagString: Untagged
@@ -34762,6 +34847,7 @@ MonoBehaviour:
   _attackRadius: 1
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 5
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -34896,6 +34982,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1297957246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1297957238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb51118cbef3d14f8e7364bf1754601, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingHealth: 5
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!1 &1298258459
 GameObject:
   m_ObjectHideFlags: 0
