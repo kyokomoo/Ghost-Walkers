@@ -1045,7 +1045,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97002198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.1, y: -78.58, z: -30}
+  m_LocalPosition: {x: -65.81, y: -78.47, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4377,10 +4377,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81de3e61de5e3a24989b6b7426acd290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
+  _moveSpeed: 3
   _attackDamage: 1
   _lifePoints: 2
-  _attackRadius: 2
+  _attackRadius: 3
   _wallLeft: 5
   _wallRight: 10
   _walkDistance: 5
@@ -7350,7 +7350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.871754, y: -74.28731, z: -30}
+  m_LocalPosition: {x: -48.11415, y: -74.30991, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7858,7 +7858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521268719}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -66.1, y: -80, z: 0}
+  m_LocalPosition: {x: -65.81, y: -79.89, z: 0}
   m_LocalScale: {x: 4.7282577, y: 4.4811864, z: 0.324864}
   m_ConstrainProportionsScale: 0
   m_Children:
