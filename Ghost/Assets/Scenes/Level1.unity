@@ -3823,9 +3823,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 3
-  _attackDamage: 1
+  _attackDamage: 2
   _lifePoints: 2
-  _attackRadius: 3
+  _attackRadius: 2
   _wallLeft: 5
   _wallRight: 10
   _walkDistance: 5
@@ -6462,7 +6462,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -47.987732, y: -74.30991, z: -30}
+  m_LocalPosition: {x: -44.210114, y: -74.30991, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
