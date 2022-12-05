@@ -59,13 +59,17 @@ public class EnemyMovementAndCombat : Enemies
         {
         	if (this.transform.position.x >= startPosition + getWalkDistance()) {
       		  walkingDirection = -1.0f;
-			  enemySR.flipX = true;
+			  //enemySR.flipX = true;
 		}
         	else if (this.transform.position.x <= startPosition - getWalkDistance()) {
       	        walkingDirection = 1.0f;
-			  enemySR.flipX = false;
+			  //enemySR.flipX = false;
 		}
 
+		if (walkingDirection > 0)
+			enemySR.flipX = false;
+		else
+			enemySR.flipX = true;
 
        	this.transform.position += new Vector3(walkingDirection * getMoveSpeed() * Time.deltaTime, 0f, 0f);
    	   }
@@ -85,7 +89,7 @@ public class EnemyMovementAndCombat : Enemies
                     //enemyAnim.SetBool("AttackA", true);
 			  timer += Time.deltaTime;
 			  if (timer > 2) {
-        		  	FindObjectOfType<Player>().GetComponent<Health>().TakeDamage(getAttackDamage());
+        		  	GameObject.FindWithTag("Player").GetComponent<Health>().TakeDamage(getAttackDamage());
 				timer = 0;
 			  }
                 }
@@ -109,7 +113,7 @@ public class EnemyMovementAndCombat : Enemies
                     //enemyAnim.SetBool("AttackA", true);
 			  timer += Time.deltaTime;
 			  if (timer > 2) {
-        		  	FindObjectOfType<Player>().GetComponent<Health>().TakeDamage(getAttackDamage());
+        		  	GameObject.FindWithTag("Player").GetComponent<Health>().TakeDamage(getAttackDamage());
 				timer = 0;
 			  }
                 }
@@ -135,9 +139,7 @@ public class EnemyMovementAndCombat : Enemies
 
     }
 
-
-
- void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Bullet")
         {
@@ -148,6 +150,5 @@ public class EnemyMovementAndCombat : Enemies
 
         }
     }
-
 
 }
