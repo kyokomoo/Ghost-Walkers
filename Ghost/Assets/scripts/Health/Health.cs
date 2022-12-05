@@ -7,6 +7,7 @@ public class Health : MonoBehaviour
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
    // private Animator anim;
+    
     private bool dead;
 
     [Header("iFrames")]
@@ -21,6 +22,9 @@ public class Health : MonoBehaviour
     [Header("Death Sound")]
     [SerializeField] private AudioClip deathSound;
     [SerializeField] private AudioClip hurtSound;
+
+
+    public GameManagerScript gameManager;
 
     private void Awake()
     {
@@ -50,9 +54,17 @@ public class Health : MonoBehaviour
 
                 //anim.SetBool("grounded", true);
                 //anim.SetTrigger("die");
+                
+                //Destroy(gameObject);
 
-                dead = true;
+                //LevelManager.instance.Respawn();
+
+                gameManager.gameOver();
+
+
                 //SoundManager.instance.PlaySound(deathSound);
+
+                
             }
         }
     }

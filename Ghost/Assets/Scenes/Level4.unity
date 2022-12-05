@@ -2764,7 +2764,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97002198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 189.03, y: 2.4119997, z: -30}
+  m_LocalPosition: {x: 178.93, y: 1.6219995, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10257,7 +10257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365242287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 189.03, y: 0.85, z: 0}
+  m_LocalPosition: {x: 178.93, y: 0.06, z: 0}
   m_LocalScale: {x: 4.7282577, y: 4.4811864, z: 0.324864}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10325,6 +10325,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 6
+  iFramesDuration: 0
+  numberOfFlashes: 0
+  components: []
+  deathSound: {fileID: 0}
+  hurtSound: {fileID: 0}
+  gameManager: {fileID: 0}
 --- !u!114 &365242294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14112,7 +14118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 204.39362, y: 2.389165, z: -30}
+  m_LocalPosition: {x: 200.64989, y: 1.5897186, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
