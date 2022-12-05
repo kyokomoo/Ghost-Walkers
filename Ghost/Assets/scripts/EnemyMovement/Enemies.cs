@@ -12,6 +12,7 @@ public class Enemies : MonoBehaviour
     float attackRadius;
     float wallLeft;
     float wallRight;
+    float walkDistance;
 
     //movement
     float followRadius;
@@ -44,6 +45,12 @@ public class Enemies : MonoBehaviour
     	wallRight = t_wallRight;
 
     }
+
+    public void setWalkDistance(float t_walkDistance)
+    {
+	walkDistance = t_walkDistance;
+
+    }
 	
 
     public int getMoveSpeed()
@@ -71,6 +78,11 @@ public class Enemies : MonoBehaviour
     public float getWallRight()
     {
 	 return wallRight;
+    }
+
+    public float getWalkDistance()
+    {
+	 return walkDistance;
     }
   
 

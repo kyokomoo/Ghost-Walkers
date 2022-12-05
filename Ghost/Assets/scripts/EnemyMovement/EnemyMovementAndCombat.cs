@@ -12,8 +12,10 @@ public class EnemyMovementAndCombat : Enemies
     public float _attackRadius;
     public float _wallLeft;
     public float _wallRight;
+    public float _walkDistance;
     bool attack = false;
     float timer;
+    float startPosition;
 
     float walkingDirection = 1.0f;
 
@@ -30,16 +32,18 @@ public class EnemyMovementAndCombat : Enemies
     void Start()
     {
       //get the player transform   
-        playerTransform = FindObjectOfType<Player>().GetComponent<Transform>();
+        playerTransform = GameObject.FindWithTag("Player").GetComponent<Transform>();
       //enemy animation and sprite renderer 
         enemyAnim = gameObject.GetComponent<Animator>();
         enemySR = GetComponent<SpriteRenderer>();
+	  startPosition = this.transform.position.x;
       //set the variables
         setMoveSpeed(_moveSpeed);
         setAttackDamage(_attackDamage);
         setLifePoints(_lifePoints);
         setAttackRadius(_attackRadius);
         setFollowRadius(_followRadius);
+	  setWalkDistance(_walkDistance);
         setWallLeft(_wallLeft);
         setWallRight(_wallRight);
     }
@@ -53,11 +57,11 @@ public class EnemyMovementAndCombat : Enemies
 	  //walkAmount.x = walkingDirection * getMoveSpeed() * Time.deltaTime;
 	  if (!attack)
         {
-        	if (this.transform.position.x >= getWallRight()) {
+        	if (this.transform.position.x >= startPosition + getWalkDistance()) {
       		  walkingDirection = -1.0f;
 			  enemySR.flipX = true;
 		}
-        	else if (this.transform.position.x <= getWallLeft()) {
+        	else if (this.transform.position.x <= startPosition - getWalkDistance()) {
       	        walkingDirection = 1.0f;
 			  enemySR.flipX = false;
 		}
@@ -68,14 +72,14 @@ public class EnemyMovementAndCombat : Enemies
  
 
 	 
-        if (checkFollowRadius(playerTransform.position.x,transform.position.x))
+        if (checkFollowRadius(playerTransform.position.x,this.transform.position.x))
         {
             attack = true;
             //if player in front of the enemies
-            if (playerTransform.position.x < transform.position.x)
+            if (playerTransform.position.x < this.transform.position.x)
             {
 
-                if (checkAttackRadius(playerTransform.position.x, transform.position.x))
+                if (checkAttackRadius(playerTransform.position.x, this.transform.position.x))
                 {
                     //for attack animation
                     //enemyAnim.SetBool("AttackA", true);
@@ -97,9 +101,9 @@ public class EnemyMovementAndCombat : Enemies
 
             }
             //if player is behind enemies
-            else if(playerTransform.position.x > transform.position.x)
+            else if(playerTransform.position.x > this.transform.position.x)
             {
-                if (checkAttackRadius(playerTransform.position.x, transform.position.x))
+                if (checkAttackRadius(playerTransform.position.x, this.transform.position.x))
                 {
                     //for attack animation
                     //enemyAnim.SetBool("AttackA", true);

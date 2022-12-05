@@ -4728,9 +4728,10 @@ MonoBehaviour:
   _moveSpeed: 2
   _attackDamage: 1
   _lifePoints: 2
-  _attackRadius: 1
+  _attackRadius: 2
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 5
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -7667,7 +7668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -42.071854, y: -74.30991, z: -30}
+  m_LocalPosition: {x: -28.64553, y: -74.15442, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12384,6 +12385,7 @@ MonoBehaviour:
   _attackRadius: 1
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 5
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -18337,6 +18339,7 @@ MonoBehaviour:
   _attackRadius: 2
   _wallLeft: 5
   _wallRight: 10
+  _walkDistance: 0
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
@@ -19628,8 +19631,9 @@ MonoBehaviour:
   _attackDamage: 1
   _lifePoints: 2
   _attackRadius: 1
-  _wallLeft: 5
-  _wallRight: 10
+  _wallLeft: 0
+  _wallRight: 0
+  _walkDistance: 5
   _followRadius: 5
   playerTransform: {fileID: 0}
   enemyAnim: {fileID: 0}
