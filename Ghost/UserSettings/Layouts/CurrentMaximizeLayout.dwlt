@@ -713,9 +713,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 24f257660877a5e4a9866a8b10f12826, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 9d020120e244f744aaceec467b359d48, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 8956728294896662297, guid: 24f257660877a5e4a9866a8b10f12826, type: 2}
+  - m_Target: {fileID: 778609359639704526, guid: 9d020120e244f744aaceec467b359d48, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -999,8 +999,8 @@ MonoBehaviour:
     y: 0
     width: 476
     height: 708.4
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
