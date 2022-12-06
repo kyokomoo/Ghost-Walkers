@@ -76,7 +76,7 @@ public class EnemyMovementAndCombat : Enemies
  
 
 	 
-        if (checkFollowRadius(playerTransform.position.x,this.transform.position.x))
+        if (checkFollowRadius(playerTransform.position.x,this.transform.position.x) && playerTransform.position.y >= this.transform.position.y && playerTransform.position.y <= this.transform.position.y + 5)
         {
             attack = true;
             //if player in front of the enemies
