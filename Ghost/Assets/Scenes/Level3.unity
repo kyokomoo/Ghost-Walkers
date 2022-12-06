@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 35275386}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8652,7 +8652,7 @@ GameObject:
   - component: {fileID: 317544054}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20054,7 +20054,7 @@ GameObject:
   - component: {fileID: 746885459}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28131,7 +28131,7 @@ GameObject:
   - component: {fileID: 1044516455}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34757,7 +34757,7 @@ GameObject:
   - component: {fileID: 1297957246}
   m_Layer: 6
   m_Name: Skeleton Idle_0 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
