@@ -9,6 +9,8 @@ public class Health : MonoBehaviour
    private Animator anim;
     
     private bool dead;
+    private bool death;
+    float timer;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -41,13 +43,21 @@ public class Health : MonoBehaviour
         {
            // anim.SetTrigger("hurt");
             StartCoroutine(Invunerability());
+            death = false;
             //SoundManager.instance.PlaySound(hurtSound);
         }
         
         else
         {
 		if (gameObject.tag == "Enemy")
-			Destroy(gameObject);
+        {
+            
+            gameObject.GetComponent <Animator>().SetBool("death", true);
+           
+            //gameObject.GetComponent <Animator>().SetBool("death", false);
+			Destroy(gameObject, 1.4f);
+            
+        }
             if (!dead)
             {
                 //Deactivate all attached component classes

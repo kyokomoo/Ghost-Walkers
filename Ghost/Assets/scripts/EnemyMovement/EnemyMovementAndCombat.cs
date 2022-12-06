@@ -15,6 +15,7 @@ public class EnemyMovementAndCombat : Enemies
     public float _walkDistance;
     bool attack = false;
     float timer;
+    float attackTimer;
     float startPosition;
 
     float walkingDirection = 1.0f;
@@ -88,16 +89,25 @@ public class EnemyMovementAndCombat : Enemies
                     //for attack animation
                     //enemyAnim.SetBool("AttackA", true);
 			  timer += Time.deltaTime;
-			  if (timer > 2) {
+			  if (timer > 0) {
+                enemyAnim.SetBool("attack", true);
+                    attackTimer += Time.deltaTime;
+                    if (attackTimer >= 1)
+                    {
         		  	GameObject.FindWithTag("Player").GetComponent<Health>().TakeDamage(getAttackDamage());
-				timer = 0;
+				//enemyAnim.SetBool("attack", true);
+                attackTimer = 0;
+                timer = 0;
+                    }
 			  }
                 }
                 else
                 {
+                    
                     this.transform.position += new Vector3(-getMoveSpeed() * Time.deltaTime, 0f, 0f);
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", false);
+                    
+                    //enemyAnim.SetBool("attack", true);
                     //walk
                     enemyAnim.SetBool("Walking", true);
                     enemySR.flipX = true;
@@ -112,18 +122,25 @@ public class EnemyMovementAndCombat : Enemies
                     //for attack animation
                     //enemyAnim.SetBool("AttackA", true);
 			  timer += Time.deltaTime;
-			  if (timer > 2) {
+			  if (timer > 0) {
+                enemyAnim.SetBool("attack", true);
+                    attackTimer += Time.deltaTime;
+                    if (attackTimer >= 1)
+                    {
         		  	GameObject.FindWithTag("Player").GetComponent<Health>().TakeDamage(getAttackDamage());
-				timer = 0;
+				//enemyAnim.SetBool("attack", true);
+                attackTimer = 0;
+                timer = 0;
+                    }
 			  }
                 }
                 else
                 {
                     this.transform.position += new Vector3(getMoveSpeed() * Time.deltaTime, 0f, 0f);
                     //for attack animation
-                    enemyAnim.SetBool("AttackA", false);
+                    //enemyAnim.SetBool("attack", true);
                     //walk
-                    enemyAnim.SetBool("Walking", true);
+                    enemyAnim.SetBool("Walking", false);
                     enemySR.flipX = false;
                 }
 
@@ -132,8 +149,9 @@ public class EnemyMovementAndCombat : Enemies
         }
         else
         {
-            //enemyAnim.SetBool("Walking", false);
+        enemyAnim.SetBool("attack", false);
 		attack = false;
+        
         }
 
 
