@@ -2795,7 +2795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97002198}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.62, y: -78.55801, z: -30}
+  m_LocalPosition: {x: 92.24, y: 2.5919995, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8665,8 +8665,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 317544046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.36, y: -10.686774, z: 0.44109035}
-  m_LocalScale: {x: 4.0692, y: 3.46435, z: 1}
+  m_LocalPosition: {x: 51.6109, y: -10.2851, z: 0.44109035}
+  m_LocalScale: {x: 5.073072, y: 4.669488, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2034147599}
@@ -8685,9 +8685,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 2
-  _attackDamage: 1
+  _attackDamage: 2
   _lifePoints: 2
-  _attackRadius: 2
+  _attackRadius: 3
   _wallLeft: 5
   _wallRight: 10
   _walkDistance: 5
@@ -8815,7 +8815,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1335475225, guid: 3acfddba453290e458731d9546b4dd11, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.31764707, g: 0.7254902, b: 0.8588236, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8837,7 +8837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb51118cbef3d14f8e7364bf1754601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 20
   iFramesDuration: 0
   numberOfFlashes: 0
   components: []
@@ -10274,7 +10274,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365242287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.62, y: -80.12, z: 0}
+  m_LocalPosition: {x: 92.24, y: 1.03, z: 0}
   m_LocalScale: {x: 4.7282577, y: 4.4811864, z: 0.324864}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14307,7 +14307,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.82902, y: -73.023254, z: -30}
+  m_LocalPosition: {x: 102.58767, y: 2.5871472, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -28144,8 +28144,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044516447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.861794, y: -10.686774, z: 0.44109035}
-  m_LocalScale: {x: 4.0692, y: 3.46435, z: 1}
+  m_LocalPosition: {x: 37.1275, y: -10.3251, z: 0.44109035}
+  m_LocalScale: {x: 5.132075, y: 4.5493846, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2034147599}
@@ -28164,9 +28164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _moveSpeed: 2
-  _attackDamage: 1
+  _attackDamage: 2
   _lifePoints: 2
-  _attackRadius: 2
+  _attackRadius: 3
   _wallLeft: 5
   _wallRight: 10
   _walkDistance: 5
@@ -28294,7 +28294,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -1335475225, guid: 3acfddba453290e458731d9546b4dd11, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.31764707, g: 0.7254902, b: 0.8588236, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -28316,7 +28316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb51118cbef3d14f8e7364bf1754601, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 5
+  startingHealth: 20
   iFramesDuration: 0
   numberOfFlashes: 0
   components: []
