@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
     [Header ("Health")]
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
-   // private Animator anim;
+   private Animator anim;
     
     private bool dead;
 
@@ -29,7 +29,7 @@ public class Health : MonoBehaviour
     private void Awake()
     {
         currentHealth = startingHealth;
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
     public void TakeDamage(float _damage)
@@ -54,7 +54,7 @@ public class Health : MonoBehaviour
                 foreach (Behaviour component in components)
                     component.enabled = false;
 
-                //anim.SetBool("grounded", true);
+                anim.SetBool("dead", currentHealth == 0);
                 //anim.SetTrigger("die");
                 
                 //Destroy(gameObject);

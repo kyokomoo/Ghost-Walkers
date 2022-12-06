@@ -81,16 +81,19 @@ public class PlayerMovementTest : MonoBehaviour
         else
         {
             isGrounded = false;
+
         }
 
         //animation transition code
         _animator.SetBool("walk", direction != 0);
-
+        //_animator.SetBool("grounded", isGrounded = 0);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             player.velocity = new Vector2(player.velocity.x, jumpspeed);
             
+            isGrounded = false;
+
         }
 
 
@@ -102,4 +105,5 @@ public class PlayerMovementTest : MonoBehaviour
 
     }
 
+    
 }
