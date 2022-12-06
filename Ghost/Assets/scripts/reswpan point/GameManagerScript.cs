@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManagerScript : MonoBehaviour
 {
+    public static bool GameIsPaused = false;
+
     public GameObject gameOverUI;
     
     // Start is called before the first frame update
@@ -17,11 +19,32 @@ public class GameManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
     }
 
+    void Resume()
+    {
+        gameOverUI.SetActive(false);
+        GameIsPaused = false;
+    }
 
- // Update is called once per frame
+    void Pause()
+    {
+        gameOverUI.SetActive(true);
+        GameIsPaused = true;
+    }
+
+    // Update is called once per frame
     public void gameOver()
     {
         gameOverUI.SetActive(true);
